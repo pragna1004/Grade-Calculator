@@ -18,14 +18,7 @@ class _hiiState extends State<hii> {
           height: double.infinity,
           width: double.infinity,
           decoration: BoxDecoration(
-            gradient: RadialGradient(
-                colors: [Colors.white,Colors.blue.shade900,Colors.black],
-                radius: 1.28,
-                center: AlignmentGeometry.directional(-0, -0.1)
-        
-        
-        
-            ),
+            image: DecorationImage(image: MediaQuery.of(context).size.width>1000?AssetImage("o(1)c.png"):AssetImage("assets/o(1)p.png"),fit: BoxFit.cover)
           ),
           child:
                 SafeArea(
@@ -43,13 +36,13 @@ class _hiiState extends State<hii> {
 
                             color:Colors.transparent.withOpacity(0.01),
                           ),
-                          child: Center(child: Text("GRADE CALCULATOR",style: GoogleFonts.alegreya(color: Colors.white,fontSize:33 ))),
+                          child: Center(child: Text("        GRADE \n CALCULATOR",style: GoogleFonts.alegreya(color: Colors.white,fontSize:33,fontWeight: FontWeight.bold ))),
                         ),
                          SizedBox(
                            height:90-50
                          ),
                         CircleAvatar(
-                          radius: 135,
+                          radius: 100,
                             backgroundImage:AssetImage("assets/hii.png"),
                           
                         ),
@@ -67,7 +60,8 @@ class _hiiState extends State<hii> {
                               width: 230,
                               child: Center(
                                 child: Text("G e t   S t a r t e d",style: TextStyle(
-                                  color: Colors.white54,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold ,
                                   fontSize: 19,
                                 ),),
                               ),
@@ -75,7 +69,7 @@ class _hiiState extends State<hii> {
                                 border: Border.all(
 
 
-                                  color: Colors.white38,
+                                  color: Colors.white,
                                 ),
                                 color: Colors.white12,
                                 borderRadius: BorderRadius.circular(100),

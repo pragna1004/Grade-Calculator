@@ -13,7 +13,23 @@ class mee extends StatefulWidget {
   State<mee> createState() => _meeState();
 }
 
-class _meeState extends State<mee> {
+class _meeState extends State<mee> with SingleTickerProviderStateMixin{
+  late AnimationController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller=AnimationController(vsync: this,duration: Duration.zero);
+
+  }
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,14 +39,7 @@ class _meeState extends State<mee> {
           height: double.infinity,
           width: double.infinity,
           decoration: BoxDecoration(
-            gradient: RadialGradient(
-              colors: [Colors.blue.shade900,Colors.black,Colors.blue.shade600],
-              radius: 1.28,
-              center: AlignmentGeometry.directional(-1, -1)
-        
-        
-        
-            ),
+            image: DecorationImage(image: MediaQuery.of(context).size.width>1000?AssetImage("assets/o(1)c.png"):AssetImage("assets/o(1)p.png"),fit: BoxFit.cover)
           ),
           child: SafeArea(
             child: Column(
@@ -45,15 +54,15 @@ class _meeState extends State<mee> {
                   ],
                 ),
                 SizedBox(
-                  height:100,
+                  height:100+30,
                 ),
                 Text("H i  T h e r e !",style: GoogleFonts.ebGaramond(
-                  fontSize: 30,
+                  fontSize: 40,
 
                   color: Colors.white,
                 ),),
                 SizedBox(
-                  height:100,
+                  height:100-30,
                 ),
 
                 Padding(
@@ -72,23 +81,72 @@ class _meeState extends State<mee> {
                     child: Padding(
                       padding: const EdgeInsets.fromLTRB(15,0,0,3),
                       child: TextField(
+                        keyboardType: TextInputType.emailAddress,
                         decoration: InputDecoration(
                          border: InputBorder.none,
 
-                         prefixIcon: Icon(Icons.email_outlined),
-                          hintText: "Enter your Email id"
+
+
+                            prefix: Container(
+                              width: 50,
+                              child: Row(
+                                  children: [
+                                    Icon(Icons.email_outlined,color: Colors.white70),
+                                    SizedBox(width: 10,),
+                                    Text("|"),
+                                  ]
+                              ),
+                            ),
+                          hintText: "Enter your Email id",
+                          hintStyle: TextStyle(
+                            color: Colors.white70,
+                          )
                         ),
                       ),
                     ),
                   ),
                 ),
                 SizedBox(
-                  height:20,
+                  height:10,
                 ),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    Container(
-
+                    InkWell(
+                      onTap: (){
+                        showAdaptiveDialog(
+                          context: context,
+                          builder: (context) {
+                            return Dialog(
+                              backgroundColor: Colors.transparent,
+                              child: Container(
+                                height: 200,
+                                width: 200,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                                child: Lottie.asset(
+                                  "assets/otp.json",
+                                  controller: _controller,
+                                  onLoaded: (c) {
+                                    _controller.duration = c.duration;
+                                    _controller.forward();
+                                    if(_controller.isCompleted){
+                                    _controller.reset();}
+                                  },
+                                ),
+                              ),
+                            );
+                          },
+                        );
+                      },
+                      child: Container(
+                      
+                        child: Center(child: Text("SEND OTP",style: TextStyle(
+                          color: Colors.white,
+                        ),)),
+                      ),
                     )
 
                   ],
@@ -110,11 +168,26 @@ class _meeState extends State<mee> {
                     child: Padding(
                       padding: const EdgeInsets.fromLTRB(15,0,0,3),
                       child: TextField(
+                        keyboardType: TextInputType.phone,
                         decoration: InputDecoration(
                             border: InputBorder.none,
 
-                            prefixIcon: Icon(Icons.email_outlined),
-                            hintText: "Enter your Email id"
+
+
+                            prefix: Container(
+                              width: 50,
+                              child: Row(
+                                children: [
+                                  Icon(Icons.key,color: Colors.white70),
+                                  SizedBox(width: 10,),
+                                  Text("|"),
+                                ]
+                              ),
+                            ),
+                            hintText: "Enter your 4 Digit OTP",
+                          hintStyle: TextStyle(
+                            color: Colors.white70,
+                          )
                         ),
                       ),
                     ),

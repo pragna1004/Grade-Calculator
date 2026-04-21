@@ -96,7 +96,7 @@ class Super extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
-                  height: 400,
+                  height: 500git ,
                   width: 400,
                   child: Padding(
                     padding: const EdgeInsets.fromLTRB(3,0,8,0),
@@ -106,7 +106,7 @@ class Super extends StatelessWidget {
                         return Row(
                           children: [
                             Padding(
-                              padding: const EdgeInsets.fromLTRB(10,0,8,15),
+                              padding: const EdgeInsets.fromLTRB(15,10,8,15),
                               child: Container(
                                 decoration: BoxDecoration(
                                   border: Border.all(

@@ -90,7 +90,7 @@ class _dashState extends State<dash> {
                     },
                       child: Container(
                         height: 50,
-                        width: 85,
+                        width: MediaQuery.of(context).size.width>1000?MediaQuery.of(context).size.width*0.25:MediaQuery.of(context).size.width*0.25,
                         decoration: BoxDecoration(
                             color: num==0?Colors.white.withOpacity(0.4):Colors.blue.shade900.withOpacity(0.4),
                           borderRadius: BorderRadius.circular(60),
@@ -115,7 +115,7 @@ class _dashState extends State<dash> {
                       },
                       child: Container(
                           height: 50,
-                          width: 85,
+                          width: MediaQuery.of(context).size.width>1000?MediaQuery.of(context).size.width*0.25:MediaQuery.of(context).size.width*0.25,
                           decoration: BoxDecoration(
                               color: num==1?Colors.white.withOpacity(0.4):Colors.blue.shade900.withOpacity(0.4),
                               borderRadius: BorderRadius.circular(60),
@@ -140,7 +140,7 @@ class _dashState extends State<dash> {
                       },
                       child: Container(
                           height: 50,
-                          width: 85,
+                          width: MediaQuery.of(context).size.width>1000?MediaQuery.of(context).size.width*0.25:MediaQuery.of(context).size.width*0.25,
                           decoration: BoxDecoration(
                               color: num==2?Colors.white.withOpacity(0.4):Colors.blue.shade900.withOpacity(0.4),
                               borderRadius: BorderRadius.circular(60),
@@ -165,7 +165,7 @@ class _dashState extends State<dash> {
                       },
                       child: Container(
                           height: 50,
-                          width: 85,
+                          width: MediaQuery.of(context).size.width>1000?MediaQuery.of(context).size.width*0.25:MediaQuery.of(context).size.width*0.25,
                           decoration: BoxDecoration(
                               color: num==3?Colors.white.withOpacity(0.4):Colors.blue.shade900.withOpacity(0.4),
                               borderRadius: BorderRadius.circular(60),
@@ -201,7 +201,7 @@ class _dashState extends State<dash> {
                         },
                         child: Container(
                             height: 25,
-                            width: 130,
+                            width: MediaQuery.of(context).size.width>1000?MediaQuery.of(context).size.width*0.20:MediaQuery.of(context).size.width*0.25,
                             decoration: BoxDecoration(
                                 color: b==0?Colors.white.withOpacity(0.4):Colors.blue.shade900.withOpacity(0.4),
                                 borderRadius: BorderRadius.circular(60),
@@ -228,7 +228,7 @@ class _dashState extends State<dash> {
                         },
                         child: Container(
                             height: 50,
-                            width: 130,
+                            width:  MediaQuery.of(context).size.width>1000?MediaQuery.of(context).size.width*0.20:MediaQuery.of(context).size.width*0.25,
                             decoration: BoxDecoration(
                                 color: b==1?Colors.white.withOpacity(0.4):Colors.blue.shade900.withOpacity(0.4),
                                 borderRadius: BorderRadius.circular(60),
@@ -255,7 +255,7 @@ class _dashState extends State<dash> {
                         },
                         child: Container(
                             height: 25,
-                            width: 130,
+                            width:  MediaQuery.of(context).size.width>1000?MediaQuery.of(context).size.width*0.20:MediaQuery.of(context).size.width*0.25,
                             decoration: BoxDecoration(
                                 color: b==2?Colors.white.withOpacity(0.4):Colors.blue.shade900.withOpacity(0.4),
                                 borderRadius: BorderRadius.circular(60),
@@ -303,7 +303,7 @@ class _dashState extends State<dash> {
                             child:Center(child: Text("CSE-A",style:TextStyle(color:Colors.white,fontSize: 20)))
                         ),
                       ),
-                      SizedBox(width: 10,),
+                      SizedBox(width: 25,),
                       InkWell(
                         onTap:(){
                           setState(() {
@@ -328,7 +328,7 @@ class _dashState extends State<dash> {
                             child:Center(child: Text("CSE-B",style:TextStyle(color:Colors.white,fontSize: 20)))
                         ),
                       ),
-                      SizedBox(width: 10,),
+                      SizedBox(width: 25,),
                       InkWell(
                         onTap:(){
                           setState(() {
@@ -361,7 +361,7 @@ class _dashState extends State<dash> {
                 height:35
               ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal:35,),
+              padding:  MediaQuery.of(context).size.width<1000?EdgeInsetsGeometry.symmetric(horizontal:35,):EdgeInsetsGeometry.fromLTRB(5,0,700,0),
               child: com?Container(
                 height:340,
                 decoration: BoxDecoration(
@@ -419,6 +419,9 @@ class _dashState extends State<dash> {
 
 
                         ),
+                        SizedBox(
+                          height:15
+                        ),
                         ElevatedButton(onPressed: (){
                           setState(() {
 
@@ -442,13 +445,16 @@ class _dashState extends State<dash> {
                 ),
               ):Container(),
             ),
+              SizedBox(
+                height:15,
+              ),
               Container(
                 child: com?ElevatedButton(onPressed: (){
                   print(s);
 
 
                   setState(() {
-                    if(buc==100||buc==20){
+                    if(buc==100){
                     Navigator.push(context,MaterialPageRoute(builder: (BuildContext context)=>Super(s:s,bu:bu)));}
                     else{
                       _percontroller.text="$buc";

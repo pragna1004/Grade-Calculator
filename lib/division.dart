@@ -40,7 +40,10 @@ class Super extends StatelessWidget {
         ),
 
         body: Container(
-          color: Colors.blue,
+          decoration: BoxDecoration(
+            gradient: RadialGradient(colors: [Colors.blue.shade900,Colors.black],
+            radius: 0.63)
+          ),
           height: double.infinity,
           width: double.infinity,
           child: Padding(
@@ -55,13 +58,13 @@ class Super extends StatelessWidget {
                       child: Container(
                         decoration: BoxDecoration(
                           border: Border.all(
-                            color: Colors.black,
+                            color: Colors.white,
                           ),
                           borderRadius: BorderRadius.circular(20)
                         ),
                         height: 40,
                         width: 100,
-                        child: Center(child: Text("${s[index]}")),
+                        child: Center(child: Text("${s[index]}",style: TextStyle(color: Colors.white),)),
 
                       ),
                     ),
@@ -69,14 +72,14 @@ class Super extends StatelessWidget {
                       padding: const EdgeInsets.all(8.0),
                       child: Container(decoration: BoxDecoration(
                           border: Border.all(
-                            color: Colors.black,
+                            color: Colors.white,
                           ),
                           borderRadius: BorderRadius.circular(20)
                       ),
 
                         height: 40,
                         width: 40,
-                        child: Center(child: Text("${bu[index]}")),
+                        child: Center(child: Text("${bu[index]}",style: TextStyle(color:Colors.white),)),
 
                       ),
                     ),

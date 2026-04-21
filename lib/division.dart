@@ -129,7 +129,7 @@ class _SuperState extends State<Super> {
                           )]
                       ),
                           child:Center(child: Text("%",style: TextStyle(color:Colors.white,fontSize: 20,),))
-                      )
+                      ),
                     ],
                   ),
                 ),
@@ -217,6 +217,1561 @@ class _SuperState extends State<Super> {
                             ),
                           ),
                         ),
+                      SizedBox(
+                          width:350
+                      ),
+                      Container(
+                        height: 700,
+                        width: 300,
+                        child: ListView(
+                          scrollDirection: Axis.vertical,
+                          children: [Container(
+                            height:570,
+                            width:300,
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.white),
+                              borderRadius: BorderRadius.circular(80),
+                              color:Colors.black,
+                            ),
+                            child: Column(
+                                children: [
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(60),
+                                      gradient: LinearGradient(colors: [Colors.black,Colors.blue.shade900,Colors.black])
+                                    ),
+                                    height:40,
+                                    child: Text("STANDARD",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: Colors.white),),
+                                  ),
+                                  Row(
+                                    children: [
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                        child: Container(
+                                          height:30,
+                                          width:130,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(color: Colors.white),
+                                            borderRadius: BorderRadius.circular(80),
+                                            color:Colors.black,
+                                          ),
+                                          child: Padding(
+                                            padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                            child: Center(child: Text("A Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                        child: Container(
+                                          height:30,
+                                          width:130,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(color: Colors.white),
+                                            borderRadius: BorderRadius.circular(80),
+                                            color:Colors.black,
+                                          ),
+                                          child: Center(child: Text("μ+1.5σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    height:20
+                                  ),
+                                  Row(
+                                    children: [
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                        child: Container(
+                                          height:30,
+                                          width:130,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(color: Colors.white),
+                                            borderRadius: BorderRadius.circular(80),
+                                            color:Colors.black,
+                                          ),
+                                          child: Padding(
+                                            padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                            child: Center(child: Text("A- Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                        child: Container(
+                                          height:30,
+                                          width:130,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(color: Colors.white),
+                                            borderRadius: BorderRadius.circular(80),
+                                            color:Colors.black,
+                                          ),
+                                          child: Center(child: Text("μ+1σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                      height:20
+                                  ),
+                                  Row(
+                                    children: [
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                        child: Container(
+                                          height:30,
+                                          width:130,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(color: Colors.white),
+                                            borderRadius: BorderRadius.circular(80),
+                                            color:Colors.black,
+                                          ),
+                                          child: Padding(
+                                            padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                            child: Center(child: Text("B Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                        child: Container(
+                                          height:30,
+                                          width:130,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(color: Colors.white),
+                                            borderRadius: BorderRadius.circular(80),
+                                            color:Colors.black,
+                                          ),
+                                          child: Center(child: Text("μ+0.5σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                      height:20
+                                  ),
+                                  Row(
+                                    children: [
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                        child: Container(
+                                          height:30,
+                                          width:130,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(color: Colors.white),
+                                            borderRadius: BorderRadius.circular(80),
+                                            color:Colors.black,
+                                          ),
+                                          child: Padding(
+                                            padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                            child: Center(child: Text("B- Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                        child: Container(
+                                          height:30,
+                                          width:130,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(color: Colors.white),
+                                            borderRadius: BorderRadius.circular(80),
+                                            color:Colors.black,
+                                          ),
+                                          child: Center(child: Text("μ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                      height:20
+                                  ),
+                                  Row(
+                                    children: [
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                        child: Container(
+                                          height:30,
+                                          width:130,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(color: Colors.white),
+                                            borderRadius: BorderRadius.circular(80),
+                                            color:Colors.black,
+                                          ),
+                                          child: Padding(
+                                            padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                            child: Center(child: Text("C Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                        child: Container(
+                                          height:30,
+                                          width:130,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(color: Colors.white),
+                                            borderRadius: BorderRadius.circular(80),
+                                            color:Colors.black,
+                                          ),
+                                          child: Center(child: Text("μ-0.5",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                      height:20
+                                  ),
+                                  Row(
+                                    children: [
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                        child: Container(
+                                          height:30,
+                                          width:130,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(color: Colors.white),
+                                            borderRadius: BorderRadius.circular(80),
+                                            color:Colors.black,
+                                          ),
+                                          child: Padding(
+                                            padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                            child: Center(child: Text("C- Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                        child: Container(
+                                          height:30,
+                                          width:130,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(color: Colors.white),
+                                            borderRadius: BorderRadius.circular(80),
+                                            color:Colors.black,
+                                          ),
+                                          child: Center(child: Text("μ-1σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                      height:20
+                                  ),
+                                  Row(
+                                    children: [
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                        child: Container(
+                                          height:30,
+                                          width:130,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(color: Colors.white),
+                                            borderRadius: BorderRadius.circular(80),
+                                            color:Colors.black,
+                                          ),
+                                          child: Padding(
+                                            padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                            child: Center(child: Text("D Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                        child: Container(
+                                          height:30,
+                                          width:130,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(color: Colors.white),
+                                            borderRadius: BorderRadius.circular(80),
+                                            color:Colors.black,
+                                          ),
+                                          child: Center(child: Text("μ-1.5σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                      height:20
+                                  ),
+                                  Row(
+                                    children: [
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                        child: Container(
+                                          height:30,
+                                          width:130,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(color: Colors.white),
+                                            borderRadius: BorderRadius.circular(80),
+                                            color:Colors.black,
+                                          ),
+                                          child: Padding(
+                                            padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                            child: Center(child: Text("F Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                        child: Container(
+                                          height:30,
+                                          width:130,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(color: Colors.white),
+                                            borderRadius: BorderRadius.circular(80),
+                                            color:Colors.black,
+                                          ),
+                                          child: Center(child: Text("<μ-1.5σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                              ]
+                            ),
+                          ),
+                          SizedBox(
+                            height:30
+                          ),
+                            Container(
+                              height:570,
+                              width:300,
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Colors.white),
+                                borderRadius: BorderRadius.circular(80),
+                                color:Colors.black,
+                              ),
+                              child: Column(
+                                  children: [
+                                    Container(
+                                      decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(60),
+                                          gradient: LinearGradient(colors: [Colors.black,Colors.blue.shade900,Colors.black])
+                                      ),
+                                      height:40,
+                                      child: Text("STANDARD",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: Colors.white),),
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("A Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ+1.5σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("A- Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ+1σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("B Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ+0.5σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("B- Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("C Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ-0.5",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("C- Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ-1σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("D Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ-1.5σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("F Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("<μ-1.5σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ]
+                              ),
+                            ),
+                            SizedBox(
+                                height:30
+                            ),
+                            Container(
+                              height:570,
+                              width:300,
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Colors.white),
+                                borderRadius: BorderRadius.circular(80),
+                                color:Colors.black,
+                              ),
+                              child: Column(
+                                  children: [
+                                    Container(
+                                      decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(60),
+                                          gradient: LinearGradient(colors: [Colors.black,Colors.blue.shade900,Colors.black])
+                                      ),
+                                      height:40,
+                                      child: Text("STANDARD",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: Colors.white),),
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("A Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ+1.5σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("A- Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ+1σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("B Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ+0.5σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("B- Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("C Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ-0.5",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("C- Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ-1σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("D Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ-1.5σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("F Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("<μ-1.5σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ]
+                              ),
+                            ),
+                            SizedBox(
+                                height:30
+                            ),
+                            Container(
+                              height:570,
+                              width:300,
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Colors.white),
+                                borderRadius: BorderRadius.circular(80),
+                                color:Colors.black,
+                              ),
+                              child: Column(
+                                  children: [
+                                    Container(
+                                      decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(60),
+                                          gradient: LinearGradient(colors: [Colors.black,Colors.blue.shade900,Colors.black])
+                                      ),
+                                      height:40,
+                                      child: Text("STANDARD",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: Colors.white),),
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("A Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ+1.5σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("A- Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ+1σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("B Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ+0.5σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("B- Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("C Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ-0.5",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("C- Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ-1σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("D Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ-1.5σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("F Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("<μ-1.5σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ]
+                              ),
+                            ),
+                            SizedBox(
+                                height:30
+                            ),
+                            Container(
+                              height:570,
+                              width:300,
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Colors.white),
+                                borderRadius: BorderRadius.circular(80),
+                                color:Colors.black,
+                              ),
+                              child: Column(
+                                  children: [
+                                    Container(
+                                      decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(60),
+                                          gradient: LinearGradient(colors: [Colors.black,Colors.blue.shade900,Colors.black])
+                                      ),
+                                      height:40,
+                                      child: Text("STANDARD",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: Colors.white),),
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("A Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ+1.5σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("A- Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ+1σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("B Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ+0.5σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("B- Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("C Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ-0.5",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("C- Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ-1σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("D Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("μ-1.5σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                        height:20
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                              child: Center(child: Text("F Grade",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(8, 8, 4,6),
+                                          child: Container(
+                                            height:30,
+                                            width:130,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.white),
+                                              borderRadius: BorderRadius.circular(80),
+                                              color:Colors.black,
+                                            ),
+                                            child: Center(child: Text("<μ-1.5σ",style:TextStyle(color:Colors.white,fontSize: 20) ,)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ]
+                              ),
+                            ),
+
+                          ],
+                        ),
+                      )
+
                     ],
                   ),
                 ),

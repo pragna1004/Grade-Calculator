@@ -6,6 +6,7 @@ import 'package:http/http.dart' as http;
 import 'package:fl_chart/fl_chart.dart'; // Import fl_chart
 import 'dart:convert';
 import 'jk.dart';
+import "package:lottie/lottie.dart";
 
 class ProcessGradesPage extends StatefulWidget {
   final Map<String, int> divisions;
@@ -77,9 +78,30 @@ class _ProcessGradesPageState extends State<ProcessGradesPage> {
         throw Exception("Calculation failed.");
       }
     } catch (e) {
+      showAdaptiveDialog(context: context, builder: (BuildContext context){
+        return Dialog(
+            backgroundColor: Colors.transparent,
+            child:Padding(
+                padding: const EdgeInsets.all(50.0),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color:Colors.transparent,
+                    borderRadius: BorderRadius.circular(50),),
+                  child: Column(
+                    children: [
+
+                      Lottie.asset("assets/Notfo.json"),
+                    ],
+                  ),
+                ))
+
+        );
+
+      }
+      );
       setState(() {
         _isProcessing = false;
-        _statusMessage = "Error: $e";
+        _statusMessage = "Error:  check The divisions Distributions once Once relaunch the app and try again";
       });
     }
   }
@@ -111,7 +133,10 @@ class _ProcessGradesPageState extends State<ProcessGradesPage> {
                 SizedBox(height: 30),
 
                 if (_isProcessing)
-                  CircularProgressIndicator(color: Colors.white)
+                  Container(
+                    height: 200,
+                      width: 200,
+                      child: Lottie.asset("assets/final.json"))
                 else if (_downloadUrl == null)
                   ElevatedButton.icon(
                     style: ElevatedButton.styleFrom(
@@ -124,7 +149,7 @@ class _ProcessGradesPageState extends State<ProcessGradesPage> {
                     onPressed: _pickAndProcessFile,
                   ),
 
-                // SHOW THE CHART IF DATA EXISTS
+
                 if (_chartData.isNotEmpty)
                   Padding(
                     padding: const EdgeInsets.all(20.0),
@@ -136,6 +161,7 @@ class _ProcessGradesPageState extends State<ProcessGradesPage> {
                           borderRadius: BorderRadius.circular(20)
                       ),
                       child: BarChart(
+
                         BarChartData(
                           alignment: BarChartAlignment.spaceAround,
                           maxY: _chartData.map((e) => e['count'] as int).reduce((a, b) => a > b ? a : b).toDouble() + 2,
@@ -149,7 +175,7 @@ class _ProcessGradesPageState extends State<ProcessGradesPage> {
                                 getTitlesWidget: (double value, TitleMeta meta) {
                                   return Padding(
                                     padding: const EdgeInsets.only(top: 8.0),
-                                    child: Text(_chartData[value.toInt()]['grade'], style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+                                    child: Text(_chartData[value.toInt()]['grade'], style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold,fontSize: 10)),
                                   );
                                 },
                               ),

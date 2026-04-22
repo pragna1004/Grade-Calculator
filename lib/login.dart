@@ -315,7 +315,7 @@ class _meeState extends State<mee> with TickerProviderStateMixin{
                               padding: const EdgeInsets.all(50.0),
                               child: Container(
                                 decoration: BoxDecoration(
-                                  color:Colors.white,
+                                  color:Colors.transparent,
                                   borderRadius: BorderRadius.circular(50),),
                                     child: Column(
                                       children: [
